@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+    </head>
+
+    <body>
+        <!-- Absolute Positioned Elements -->
+
+        <!-- Relative Positioned Elements -->
+        <div id="header">
+            <div id="headerLeft">byDesign</div>
+            <div id="headerCenter">RESOLVE</div>
+            <div id="headerRight">Right</div>
+        </div>
+
+        <div id="content">
+            <div id="infoPane">
+                <div id="infoHeader"></div>
+                <div id="info"></div>
+                <div id="infoFooter"></div>
+            </div>
+            
+            <div id="editorPane">
+                <div id="editorHeader"></div>
+                <div id="editor"></div>
+                <div id="editorFooter"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footerLeft">byDesign</div>
+            <div id="footerCenter">RESOLVE</div>
+            <div id="footerRight">Right</div>
+        </div>
+    </body>
+
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/dawn");
+        editor.getSession().setMode("ace/mode/javascript");
+    </script>
+</html>

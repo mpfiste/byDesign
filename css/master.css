@@ -1,0 +1,105 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 600px;
+}
+
+#header, #footer {
+    flex: 0 0 auto;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: #16a085;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;    
+}
+
+#headerLeft, #headerCenter, #headerRight,
+#footerLeft, #footerCenter, #footerRight {
+    flex: 1 0 0;
+    margin: auto;
+}
+
+#headerCenter, #footerCenter {
+    text-align: center;
+}
+#headerLeft, #footerLeft {
+    text-align: left;
+}
+#headerRight, #footerRight {
+    text-align: right;
+}
+
+#header, #editorHeader, #infoHeader {
+    border-bottom: 1px solid black;
+}
+
+#footer, #editorFooter, #infoFooter {
+    border-top: 1px solid black;
+}
+
+#content {
+    flex: 1 0 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#infoPane {
+    flex: 0 0 auto;
+
+    width: 300px;
+
+    background-color: white;
+
+    border-right: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#editorPane {
+    flex: 1 0 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#editorHeader, #editorFooter,
+#infoHeader, #infoFooter {
+    flex: 0 0 auto;
+    height: 50px;
+}
+
+#editor, #info {
+    flex: 1 0 0;
+}
+
+#editorHeader, #editorFooter {
+    background-color: #1abc9c;
+}
+
+#infoHeader, #infoFooter {
+    background-color: #bdc3c7;
+}
